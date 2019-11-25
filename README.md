@@ -5,10 +5,10 @@
 1. dans vm: bridge
 </br>setting the fixed ip addresse: /etc/network/interfaces
 
-auto enp0s3
-iface enp0s3 inet static
-	address 10.11.11.42  | must to use this not be distributed local ip add
-	netmask 255.255.255.253
+auto enp0s3 </br>
+iface enp0s3 inet static  
+	address 10.11.11.42  | must to use this not be distributed local ip add  
+	netmask 255.255.255.253  
 	gateway 10.11.254.254 | each floor of 42 has his own gateway, this is the 	gateway for the first floor
 
 2. sudo ifconfig eth0 10.0.0.100 netmask 255.255.255.0
