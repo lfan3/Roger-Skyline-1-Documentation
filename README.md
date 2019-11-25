@@ -9,26 +9,26 @@ auto enp0s3 </br>
 iface enp0s3 inet static  
 	address 10.11.11.42  | must to use this not be distributed local ip add  
 	netmask 255.255.255.253  
-	gateway 10.11.254.254 | each floor of 42 has his own gateway, this is the 	gateway for the first floor
+	gateway 10.11.254.254 | each floor of 42 has his own gateway, this is the gateway for the first floor  
 
-2. sudo ifconfig eth0 10.0.0.100 netmask 255.255.255.0
+2. sudo ifconfig eth0 10.0.0.100 netmask 255.255.255.0  
 
-3. others commandes
-	1. Set Your IP Address
-	ifconfig eth0 192.168.1.5 netmask 255.255.255.0 up
-	2. Set Your Default Gateway
-	route add default gw 192.168.1.1
-	3. Set Your DNS Server
-	echo "nameserver 1.1.1.1" > /etc/resolv.conf
+3. others commandes  
+	1. Set Your IP Address  
+	ifconfig eth0 192.168.1.5 netmask 255.255.255.0 up  
+	2. Set Your Default Gateway  
+	route add default gw 192.168.1.1  
+	3. Set Your DNS Server  
+	echo "nameserver 1.1.1.1" > /etc/resolv.conf  
 
-4. Assuming you have valid addresses for yourself and your gateway (and you have a clear path to the Interweb) you’re all set. Test by pinging someone.
-ping google.com
+4. Assuming you have valid addresses for yourself and your gateway (and you have a clear path to the Interweb) you’re all set. Test by pinging someone.  
+ping google.com  
 
 If you’re using an older Linux system, that’s all you have to do. If you’re on a newer system, read on.
-Using ip and netplan
-You should start learning ip now, since it’s about to become common everywhere.
-Since ifconfig is being phased out, it’s time to get used to the new system. By default, Ubuntu 18.04 doesn’t use ifconfig anymore, and instead uses the new commands, ip and netplan.
-Show your IP using ip
+Using ip and netplan  
+You should start learning ip now, since it’s about to become common everywhere.  
+Since ifconfig is being phased out, it’s time to get used to the new system. By default, Ubuntu 18.04 doesn’t use ifconfig anymore, and instead uses the new commands, ip and netplan.  
+Show your IP using ip  
 
 ip addr show
 
