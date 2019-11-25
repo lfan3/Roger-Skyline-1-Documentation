@@ -1,11 +1,9 @@
 # Roger-Skyline-1-Documentation
 
-# ROGER_SKYLINE_1
-
 ## IP fix config
 
 1. dans vm: bridge
-setting the fixed ip addresse: /etc/network/interfaces
+</br>setting the fixed ip addresse: /etc/network/interfaces
 
 auto enp0s3
 iface enp0s3 inet static
